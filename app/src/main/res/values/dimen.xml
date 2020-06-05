@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_ques_num">16sp</dimen>
+    <dimen name="dim_question">20sp</dimen>
+    <dimen name="dim_option">12sp</dimen>
+    <dimen name="dim_bt_txt">12sp</dimen>
+</resources>

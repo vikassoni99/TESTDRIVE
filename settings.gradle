@@ -1,0 +1,2 @@
+rootProject.name='TESTDRIVE'
+include ':app'

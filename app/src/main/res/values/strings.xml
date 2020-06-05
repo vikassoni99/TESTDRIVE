@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TESTDRIVE</string>
+    <string name="Instructions">1. The quiz consists of 10 MCQ questions designed to assess your traffic rules understanding.\n\n
+        2. Read each question carefully and select one option.\n\n
+        3. After responding to a question, click on the "NEXT" button.\n\n
+        4. Correct answer +1, Incorrect/Skip -.50\n\n
+        5. The total score for the quiz is based on your responses to all questions.\n
+    </string>
+</resources>
