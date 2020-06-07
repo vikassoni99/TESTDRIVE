@@ -53,15 +53,15 @@
         android:id="@+id/Btn_Send_Symptoms"
         android:layout_width="120dp"
         android:layout_height="52dp"
-        android:layout_marginRight="20dp"
         android:background="@drawable/btnbg"
         android:text="Passed"
+        android:layout_marginRight="20dp"
         android:textColor="#ffffff"
         android:textSize="12dp"
-        app:layout_constraintBottom_toTopOf="@id/guidelineAt35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guidelineAt0.03"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintBottom_toTopOf="@id/guidelineAt35"
+        />
 
 
     <androidx.cardview.widget.CardView
@@ -88,10 +88,9 @@
                 android:text="TOTAL SCORE"
                 android:textSize="20sp"
                 android:textColor="#000000"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:id="@+id/txt_points"
@@ -100,7 +99,6 @@
                 android:text="5000"
                 android:textSize="60sp"
                 android:textColor="#000000"
-                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_total_points"/>
@@ -113,7 +111,6 @@
                 android:textSize="20sp"
                 android:textColor="#000000"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_points"
                 app:layout_constraintBottom_toTopOf="@+id/txt_total_incorrect"/>
@@ -126,7 +123,6 @@
                 android:textSize="20sp"
                 android:textColor="#000000"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_total_correct"
                 app:layout_constraintBottom_toBottomOf="parent"/>
