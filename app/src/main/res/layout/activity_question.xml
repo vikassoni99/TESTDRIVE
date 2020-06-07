@@ -164,7 +164,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/btnbg"
-        android:text="Locate me in every 1 hour"
+        android:text="NEXT"
         android:textColor="#ffffff"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -15,7 +15,6 @@ class QuestionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_question)
 
         var name=intent.getStringExtra("name")
-
         val totalQues: Int = 20
         var quesCount: Int = 1
         var counter:Int = 0
@@ -187,7 +186,6 @@ class QuestionActivity : AppCompatActivity() {
                 RB2.setChecked(false)
                 RB3.setChecked(false)
                 RB4.setChecked(false)
-
                 RB5.setChecked(true)
             }else{
                 //Toast.makeText(this,"Score : $score",Toast.LENGTH_LONG).show()

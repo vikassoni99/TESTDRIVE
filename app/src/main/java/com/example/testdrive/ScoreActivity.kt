@@ -13,6 +13,8 @@ class ScoreActivity:AppCompatActivity() {
         var strScore=intent.getStringExtra("score")
         var name=intent.getStringExtra("name")
 
+        val strName ="Hey " to name
+
         var score=strScore.toInt()
         var tcorrect=score
         var tincorrect=20-tcorrect
@@ -29,11 +31,13 @@ class ScoreActivity:AppCompatActivity() {
 
         if (score>=10){
             qualify="PASSED"
+            btn_result.setBackgroundResource(R.drawable.btn_bg_green)
         }else{
             qualify="FAILED"
+            btn_result.setBackgroundResource(R.drawable.btn_bg_red)
         }
 
-        txt_name.text="Hey $name"
+        txt_name.text="${strName.first + strName.second}"
         txt_points.text="$strPoints %"
         txt_total_correct.text="Total correct answers   ${tcorrect.toString()}"
         txt_total_incorrect.text="Total incorrect answers   ${tincorrect.toString()}"

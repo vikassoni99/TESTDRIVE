@@ -12,27 +12,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var name=" !"
+        var name:String=""
 
 
         Btn_EnterTest.setOnClickListener {
-            name=edt_name.getText().toString()
-
+            name=edt_name.text.toString()
             if (name.isEmpty()){
                 textFieldName.error="Please enter name !"
             }else{
                 var intent1=Intent(this@MainActivity,ConfirmTest::class.java)
 
-                Toast.makeText(this,"$name",Toast.LENGTH_LONG).show()
+                //Toast.makeText(this,"$name",Toast.LENGTH_LONG).show()
                 intent1.putExtra("name",name)
                 startActivity(intent1)
             }
-
-
         }
-
-
-
-
     }
+
 }
