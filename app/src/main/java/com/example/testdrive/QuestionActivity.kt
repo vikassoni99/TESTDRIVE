@@ -14,6 +14,8 @@ class QuestionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
 
+        var name=intent.getStringExtra("name")
+
         val totalQues: Int = 20
         var quesCount: Int = 1
         var counter:Int = 0
@@ -171,11 +173,6 @@ class QuestionActivity : AppCompatActivity() {
                 //Toast.makeText(this,"Correct h bhai !",Toast.LENGTH_LONG).show()
                 score+=1
             }
-            /*
-                RB1.setChecked(false)
-                RB2.setChecked(false)
-                RB3.setChecked(false)
-                RB4.setChecked(false)*/
 
             if (quesCount<=totalQues) {
                 correct = 0
@@ -193,8 +190,10 @@ class QuestionActivity : AppCompatActivity() {
 
                 RB5.setChecked(true)
             }else{
-                Toast.makeText(this,"Score : $score",Toast.LENGTH_LONG).show()
+                //Toast.makeText(this,"Score : $score",Toast.LENGTH_LONG).show()
                 var intent1= Intent(this@QuestionActivity,ScoreActivity::class.java)
+                intent1.putExtra("score",score.toString())
+                intent1.putExtra("name",name)
                 startActivity(intent1)
             }
         }
@@ -202,6 +201,8 @@ class QuestionActivity : AppCompatActivity() {
         btn_endTest.setOnClickListener {
             Toast.makeText(this,"Score : $score",Toast.LENGTH_LONG).show()
             var intent1= Intent(this@QuestionActivity,ScoreActivity::class.java)
+            intent1.putExtra("score",score.toString())
+            intent1.putExtra("name",name)
             startActivity(intent1)
         }
     }

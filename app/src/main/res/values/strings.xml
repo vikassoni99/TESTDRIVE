@@ -5,5 +5,6 @@
         3. After responding to a question, click on the "NEXT" button.\n\n
         4. Correct answer +1, Incorrect/Skip -.50\n\n
         5. The total score for the quiz is based on your responses to all questions.\n
+        6. You have to score 50% or above to pass this test.
     </string>
 </resources>
