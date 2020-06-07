@@ -10,6 +10,7 @@ class ScoreActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score)
 
+        val cIncorrect = { number: Int -> 20 - number}
         var strScore=intent.getStringExtra("score")
         var name=intent.getStringExtra("name")
 
@@ -17,7 +18,7 @@ class ScoreActivity:AppCompatActivity() {
 
         var score=strScore.toInt()
         var tcorrect=score
-        var tincorrect=20-tcorrect
+        var tincorrect=cIncorrect(tcorrect)
         var perScore:Double=(score.toDouble()/20)*100
         var qualify=""
         var strPer=perScore.toString()
@@ -46,4 +47,5 @@ class ScoreActivity:AppCompatActivity() {
         //Toast.makeText(this,"Score on Score : $score", Toast.LENGTH_LONG).show()
 
     }
+
 }

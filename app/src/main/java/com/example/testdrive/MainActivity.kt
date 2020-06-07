@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var name:String=""
-
-
+        var tname:String?=null
         Btn_EnterTest.setOnClickListener {
             name=edt_name.text.toString()
             if (name.isEmpty()){
